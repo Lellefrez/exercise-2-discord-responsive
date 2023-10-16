@@ -1,0 +1,235 @@
+/* Remember to download Noto Sans and Montserrat fonts from Google Fonts: https://fonts.google.com/ */
+
+:root {
+  font-family: "Noto Sans", sans-serif;
+  font-size: 18px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+img {
+  max-width: 100%;
+}
+
+/* .extra-bold {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 900;
+} */
+
+/*----------------------------------------*/
+/* HEADER */
+
+header {
+  background: url(./img/hero-bg.svg) no-repeat center;
+  background-color: blue;
+  background-size: cover;
+  height: 50vh;
+  position: relative;
+}
+
+#overlay {
+  max-width: 1180px;
+  margin: auto;
+}
+
+header nav {
+  display: flex;
+  padding-top: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .container-links {
+  display: flex;
+  gap: 30px;
+}
+
+header .container-links a {
+  text-decoration: none;
+  color: white;
+}
+
+header .container-links a:hover {
+  text-decoration: underline;
+}
+
+/* TODO: Da sistemare */
+header nav > img {
+  width: 200px;
+  padding-left: 50px;
+}
+
+.login {
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.login:hover {
+  color: blue;
+  box-shadow: 1px 1px 1px 1px black;
+}
+
+.hero img:nth-child(1) {
+  position: absolute;
+  left: 16%;
+  bottom: 0;
+}
+
+.hero img:nth-child(2) {
+  position: absolute;
+  right: 16%;
+  bottom: 0;
+}
+
+#text-header {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 30%;
+}
+
+#text-header .container-btns {
+  margin-top: 20px;
+}
+#text-header .container-btns button:nth-child(2) {
+  background-color: black;
+  color: white;
+}
+
+#text-header .container-btns button {
+  outline: none;
+  border: none;
+  padding: 12px 15px;
+  cursor: pointer;
+  border-radius: 20px;
+  margin: 10px 10px;
+}
+/*-----------------------------------------------*/
+
+/*SECTIONS*/
+
+.text-img-section {
+  display: flex;
+  padding: 3rem;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  border-bottom: 1px solid white;
+  margin-top: 24px;
+}
+.text-img-section > div {
+  display: flex;
+  align-items: center;
+  max-width: 1180px;
+  margin: auto;
+}
+.text-img-section:nth-child(odd) {
+  flex-direction: row-reverse;
+}
+.text-img-section:nth-child(2) {
+  background-color: lightgray;
+}
+
+.text-img-ultimatesection {
+  background-color: lightgray;
+  padding: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+.img-body {
+  width: 200%;
+  height: 200%;
+}
+
+#ultimate-section {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.mac {
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+  margin-top: 25px;
+  font-size: 17px;
+}
+#ultimate-section .star-container {
+  background: url(./img/stars.svg) no-repeat center;
+  background-position: bottom;
+}
+
+/*-----------------------------------------------*/
+
+/*FOOTER*/
+
+footer {
+  background-color: black;
+  height: 500px;
+}
+
+#end {
+  max-width: 1180px;
+  height: inherit;
+  margin: auto;
+  /* display: flex;
+  gap: 100px;
+  justify-content: center;*/
+  padding-top: 50px;
+}
+#wrapper-footer {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  padding-bottom: 25px;
+}
+#language {
+  border: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.elenco-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.elenco-foot h5 {
+  color: blue;
+}
+.elenco-foot a {
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+}
+.elenco-foot a:hover {
+  text-decoration: underline;
+}
+.ult {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid blue;
+  padding-top: 20px;
+}
+.ult .reg {
+  border: none;
+  outline: none;
+  padding: 12px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: blue;
+  color: white;
+}
