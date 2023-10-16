@@ -26,7 +26,6 @@ header {
   background: url(./img/hero-bg.svg) no-repeat center;
   background-color: blue;
   background-size: cover;
-  height: 50vh;
   position: relative;
 }
 
@@ -77,24 +76,23 @@ header nav > img {
 
 .hero img:nth-child(1) {
   position: absolute;
-  left: 16%;
+  right: 70%;
   bottom: 0;
 }
 
 .hero img:nth-child(2) {
   position: absolute;
-  right: 16%;
+  left: 70%;
   bottom: 0;
 }
 
 #text-header {
   color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  padding: 15vh 0;
+  margin: auto;
   text-align: center;
-  width: 30%;
+  width: 700px;
+  max-width: 90vw;
 }
 
 #text-header .container-btns {
@@ -240,34 +238,54 @@ footer {
 
 @media (max-width: 960px) {
   #text-header {
-    position: absolute;
-    left: 16%;
-    bottom: 0;
+    width: 60%;
+    text-align: left;
+    margin: 0 auto 0 40px;
+  }
+  .container-btns {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
   }
   .hero img:nth-child(1) {
     display: none;
   }
   .hero img:nth-child(2) {
-    position: absolute;
-    right: 16%;
-    bottom: 0;
+    left: 40%;
+  }
+  header .container-links {
+    display: none;
   }
 }
 
 @media (max-width: 480px) {
-  body > .text-img-section {
-    flex-direction: column;
+  #text-header {
+    width: 80%;
+    text-align: left;
+    margin: 0 auto 0 40px;
+    padding: 120px 0 300px 0;
   }
-  .text-img-section > div {
+  .container-btns {
+    display: flex;
     flex-direction: column;
+    align-items: flex-start;
+  }
+  .hero img:nth-child(1) {
+    display: block;
+    left: auto;
+    right: auto;
   }
   .hero img:nth-child(2) {
     display: none;
   }
-  .hero img:nth-child(2) {
-    display: contents;
-    position: absolute;
-    text-align: center;
-    bottom: 0;
+  .text-img-section > div {
+    display: flex;
+    flex-direction: column;
+  }
+  .img-body {
+    width: 100%;
+  }
+  .text-img-section:nth-child(2) {
+    flex-direction: row;
   }
 }
