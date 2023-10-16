@@ -233,3 +233,41 @@ footer {
   background-color: blue;
   color: white;
 }
+
+/*-----------------------------------------------*/
+
+/*MEDIA QUERI*/
+
+@media (max-width: 960px) {
+  #text-header {
+    position: absolute;
+    left: 16%;
+    bottom: 0;
+  }
+  .hero img:nth-child(1) {
+    display: none;
+  }
+  .hero img:nth-child(2) {
+    position: absolute;
+    right: 16%;
+    bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  body > .text-img-section {
+    flex-direction: column;
+  }
+  .text-img-section > div {
+    flex-direction: column;
+  }
+  .hero img:nth-child(2) {
+    display: none;
+  }
+  .hero img:nth-child(2) {
+    display: contents;
+    position: absolute;
+    text-align: center;
+    bottom: 0;
+  }
+}
